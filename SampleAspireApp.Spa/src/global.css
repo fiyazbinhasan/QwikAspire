@@ -1,0 +1,17 @@
+table {
+    border: none;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: #61DAFB;
+}
+
+th {
+    border-bottom: solid .2rem #61DAFB;
+}
+
+th,
+td {
+    padding: 1rem;
+}
