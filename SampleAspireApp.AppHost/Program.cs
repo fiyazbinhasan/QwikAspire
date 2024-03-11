@@ -10,7 +10,7 @@ builder.AddProject<Projects.SampleAspireApp_Web>("webfrontend")
 
 builder.AddNpmApp("qwik", "../SampleAspireApp.Spa")
     .WithReference(apiservice)
-    .WithServiceBinding(containerPort: 5413, scheme: "http", env: "PORT")
+    .WithEndpoint(containerPort: 5413, scheme: "http", env: "PORT")
     .AsDockerfileInManifest();
 
 builder.Build().Run();
